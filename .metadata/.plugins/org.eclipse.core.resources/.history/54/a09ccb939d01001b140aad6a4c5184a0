@@ -1,0 +1,12 @@
+package poo_cours;
+
+public class Univsersite {
+	String titre;
+	Staff[] student;
+
+		public Universite(String titre) {
+			
+		}
+	}
+
+}

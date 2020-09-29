@@ -1,0 +1,22 @@
+public class Personne {
+	
+	String nom;
+	String adresse;
+	double salaire;
+	
+	/*public String setNom(String nom) {
+	this.nom=nom;
+	}
+	
+	public String setAdresse(String adresse) {
+	this.nom=nom;
+
+	}
+	public String setNom(double salaire) {
+	this.nom=nom;
+	}
+	
+	public String Affichage(nom, adresse, salaire) {
+	System.out.println("Monsieur "+ nom + "résidant à" + adresse + "ayant un salaire de :" + salaire)
+	}*/
+}

@@ -1,0 +1,14 @@
+package univ;
+
+public class Univsersite {
+	String titre;
+	stud[] = 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		public Universite(String titre) {
+			
+		}
+	}
+
+}

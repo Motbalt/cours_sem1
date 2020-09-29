@@ -1,0 +1,28 @@
+package exercice0;
+import java.util.*;
+
+public class DeRemember extends De {
+	protected int last_value = -1;
+	private static Random r = new Random();		
+	public DeRemember() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public DeRemember(int nbFaces, String nomDe) {
+		super(nbFaces, nomDe);
+		// TODO Auto-generated constructor stub
+	}
+	public DeRemember(int nbFaces) {
+		super(nbFaces);
+		// TODO Auto-generated constructor stub
+	}
+	public int lance() {
+		int nbAleatoire = r.nextInt(nbFaces)+1;
+		while (nbAleatoire == last_value) {
+			 nbAleatoire = r.nextInt(nbFaces)+1;
+		}
+		last_value= nbAleatoire;
+		return nbAleatoire;
+
+	}
+}

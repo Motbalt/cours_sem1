@@ -1,0 +1,13 @@
+package poo_cours;
+
+public class Student extends Personne {
+	private String numStud;
+	public Student(String nom,String adresse, double salaire,String numStud) {
+		super(nom,adresse, salaire);
+		this.numStud = numStud;
+		// TODO Auto-generated constructor stub
+	}
+	public String toString() {
+		return super.toString() + numStud;
+	}
+}

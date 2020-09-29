@@ -1,0 +1,37 @@
+package poo_cours;
+public class Personne {
+	
+	String nom;
+	String adresse;
+	double salaire;
+	
+	
+	public void defPersonne(String nom, String adresse, double salaire) {
+		this.nom=nom;
+		this.adresse=adresse;
+		this.salaire=salaire;
+	}
+	/*public String setNom(String nom) {
+	this.nom=nom;
+	}
+	*/
+	public void setAdresse(String adresse) {
+	this.adresse=adresse;
+	}
+	/*
+	
+	public String setNom(double salaire) {
+	this.nom=nom;
+	}
+	*/
+	public String getAffichage() {
+	return "Monsieur "+ nom + "résidant à " + adresse + "ayant un salaire de : " + salaire;
+	}
+	public double salaireAnnuel() {
+		double result = this.salaire * 12;
+		return result;
+	}
+	public boolean salaireIsSup1000() {
+		return (this.salaire>1000);
+	}
+}

@@ -1,0 +1,15 @@
+package exercice0;
+
+public class Premier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		De de = new De(3);
+		System.out.println(de.getNbFaces());
+		int a = 50;
+		de.setNbFaces(a);
+		System.out.println(de.getNbFaces());
+
+	}
+
+}

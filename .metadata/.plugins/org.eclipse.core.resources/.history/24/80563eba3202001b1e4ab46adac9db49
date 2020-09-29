@@ -1,0 +1,8 @@
+package tp1.personnel.util;
+
+
+public class test {
+	new gregor
+	Personne p1 = new Personne("Dubois", "Thomas",,"coin coin");
+
+}

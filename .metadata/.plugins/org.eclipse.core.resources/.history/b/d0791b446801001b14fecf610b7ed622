@@ -1,0 +1,12 @@
+public class Test_personne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Personne p1 = new Personne();
+		System.out.println("nom = " + p1.nom);
+		System.out.println("adresse = " + p1.adresse);
+		
+
+	}
+
+}

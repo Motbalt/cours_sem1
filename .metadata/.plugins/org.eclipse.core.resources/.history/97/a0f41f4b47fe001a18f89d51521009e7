@@ -1,0 +1,33 @@
+package exercice0;
+
+public class test_de {
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	De de = new De();
+	System.out.println(de.toString());
+	int a = 50;
+	de.setNbFaces(a);
+	System.out.println(de.toString());
+	a = 150;
+	de.setNbFaces(a);
+	System.out.println(de.toString());
+	System.out.println(de.getLance());
+	
+	System.out.println("Création d'un nouveau Dé");
+	De de2 = new De(44);
+	System.out.println(de2.toString());
+	
+	De de3 = new De(44, "dédé");
+	System.out.println(de3.toString());
+	System.out.println(de3.getLance());
+	
+	System.out.println(de.equals(de3));
+	System.out.println(de2==de3);
+	System.out.println(de3==de3);
+	
+	System.out.println("");
+	for (int i = 0; i>10; i++) {
+	System.out.println("test dé pipé" + de3.getLancePipe(22));
+	}
+	}
+}

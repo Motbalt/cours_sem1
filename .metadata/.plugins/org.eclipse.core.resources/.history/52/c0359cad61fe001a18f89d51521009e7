@@ -1,0 +1,86 @@
+package exercice0;
+import java.util.*;
+
+public class De {
+	protected int nbFaces = 3;
+	protected String nomDe;  //je préfère dédé que dé
+	private static int nbDe = 0;
+	private static Random r = new Random();	
+
+	public De() {
+		this.nomDe = "dé n°"+nbDe;
+		nbDe++;
+	}
+	
+	public De(int nbFaces) {
+		if (nbFaces >= 3 && nbFaces <= 120){
+		this.nbFaces=nbFaces;
+		this.nomDe = "dé n°"+nbDe;
+		nbDe++;
+		}
+		else {
+			System.out.println("Veuillez entrer un nombre de face compris entre 3 et 120");
+		}
+	}
+	
+	public void setNomDe(String nomDe) {
+		this.nomDe=nomDe;
+	}
+	public De(int nbFaces, String nomDe) {
+		this.nbFaces=nbFaces;
+		this.nomDe=nomDe;
+	}
+	public String getNomDe() {
+		return nomDe;
+	}
+	public void setNbFaces(int nbFaces) {
+		if (nbFaces >= 3 && nbFaces <= 120){
+		this.nbFaces=nbFaces;
+		}
+		else {
+			System.out.println("Veuillez entrer un nombre de face compris entre 3 et 120");
+		}
+	}
+	public int getNbFaces() {
+		return this.nbFaces;
+	}
+	public String toSring() {
+		return "Le nom du dé est : " + nomDe + " Et il comporte : " +  nbFaces;
+	}
+	
+	public int getLance() {
+		int nbAleatoire = r.nextInt(nbFaces);
+		return nbAleatoire;		
+	}
+	public int getLance(int nbLance) {
+		int result=0;
+		for (int i= 0; i < nbLance;i++) {
+			int nbAleatoire = r.nextInt(nbFaces);
+			if (nbAleatoire >= result) {
+				result = nbAleatoire;
+			}
+		}
+		return result;
+	}
+	public boolean equals(De de) {
+		boolean result = false;
+		if (de.nbFaces == nbFaces) {
+			result = true;
+		}
+		return result;
+	}
+	public String getLancePipe(int minimum) {
+		int nbAleatoire;
+		do {
+		nbAleatoire = r.nextInt(nbFaces);
+		}while(nbAleatoire <= minimum);
+		String lance="Vous avez fait un " + nbAleatoire;
+		return lance;		
+	}
+	public String getLanceRemember() {
+		int nbAleatoire = r.nextInt(nbFaces);
+		String lance="Vous avez fait un " + nbAleatoire;
+		return lance;		
+	}
+
+}

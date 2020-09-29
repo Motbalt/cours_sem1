@@ -1,0 +1,20 @@
+package exercice0;
+
+public class test_de {
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	De de = new De();
+	System.out.println(de.getCarac());
+	int a = 50;
+	de.setNbFaces(a);
+	System.out.println(de.getCarac());
+	a = 150;
+	de.setNbFaces(a);
+	System.out.println(de.getCarac());
+	System.out.println(de.getLance());
+	
+	System.out.println("Création d'un nouveau Dé");
+	De de2 = new De(60);
+	System.out.println(de2.getCarac());
+	}
+}

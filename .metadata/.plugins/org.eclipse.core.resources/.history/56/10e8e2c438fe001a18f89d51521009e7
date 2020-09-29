@@ -1,0 +1,21 @@
+package exercice0;
+
+public class De {
+	public int nbFaces;
+	public De(int nbFaces) {
+		this.nbFaces=nbFaces;
+		
+	}
+	public void setNbFaces(int nbFaces) {
+		if (nbFaces >= 3 && nbFaces <= 120){
+		this.nbFaces=nbFaces;
+		}
+		else {
+			System.out.println("Veuillez entrer un nombre de face compris entre 3 et 120");
+		}
+	}
+	public int getNbFaces() {
+		return nbFaces;
+	}
+
+}

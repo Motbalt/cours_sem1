@@ -1,0 +1,7 @@
+package tableau;
+
+public class TestAgence {
+	Agence napoleon = new Agence("napoImmo");
+	Client cli1 = new Client("toto", 32); //Création d'un client
+	Client cli2 = new Client("toto", 32); //Création d'un client
+}

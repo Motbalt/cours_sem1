@@ -1,0 +1,25 @@
+package poo_cours;
+public class Test_personne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Personne p1 = new Personne();
+		p1.nom = "thomas";
+		p1.adresse = "Chemin des ortis";
+		p1.salaire = 1200;
+		System.out.println("nom = " + p1.nom);
+		System.out.println("adresse = " + p1.adresse);
+		p1.setAdresse("coin coin les moulinaux");
+		System.out.println(p1.nom + " a un salaire annuel de " + p1.salaireAnnuel());
+		System.out.println(p1.getAffichage());
+		if (p1.salaireIsSup1000()) {
+			System.out.println(p1.nom + " a un salaire supérieur à 1000");
+		}
+		else {
+			System.out.println(p1.nom + " n'a pas un salaire supérieur à 1000");
+		}
+
+
+	}
+
+}

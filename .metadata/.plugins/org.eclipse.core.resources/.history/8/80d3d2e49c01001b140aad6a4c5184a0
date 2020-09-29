@@ -1,0 +1,10 @@
+package univ;
+
+public class Univsersite {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

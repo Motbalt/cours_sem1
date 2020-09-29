@@ -1,0 +1,24 @@
+package poo_cours;
+
+import java.util.ArrayList;
+
+public class Universite{
+	private String titre;
+	ArrayList<Personne> membres; //Pas compris pk il faut Personne
+	private static int nbMembres = 0;
+
+		public Universite(String titre) {
+			ArrayList<Personne> membres = new ArrayList<>();
+			this.titre = titre;
+		}
+		public void ajoutMembre(Personne p) {
+			membres.add(p);
+			nbMembres++;
+		}
+		public void showMembers() {
+			for (int i = 0; i < nbMembres ; i++){
+				System.out.println(membres.get(i));
+			}
+		}
+		
+}

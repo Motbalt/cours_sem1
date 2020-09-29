@@ -1,0 +1,21 @@
+package exercice0;
+
+public class Depipe extends De {
+
+	public Depipe() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Depipe(int nbFaces, String nomDe) {
+		super(nbFaces, nomDe);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Depipe(int nbFaces) {
+		super(nbFaces);
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

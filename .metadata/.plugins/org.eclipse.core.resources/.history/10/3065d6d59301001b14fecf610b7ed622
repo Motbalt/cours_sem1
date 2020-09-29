@@ -1,0 +1,5 @@
+package poo_cours;
+
+public class student extends Personne {
+
+}

@@ -1,0 +1,28 @@
+package exercice0;
+import java.util.*;
+public class DeAutres extends De {
+
+	public DeAutres() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public DeAutres(int nbFaces, String nomDe) {
+		super(nbFaces, nomDe);
+		// TODO Auto-generated constructor stub
+	}
+
+	public DeAutres(int nbFaces) {
+		super(nbFaces);
+		// TODO Auto-generated constructor stub
+	}
+	public String getLanceAutres() {
+		List<String> liste =  new ArrayList<String>() ;
+		liste.add("refusé");
+		liste.add("gagner");
+		liste.add("Relance !");
+		liste.add("Passe ton tour");
+		int nbAleatoire = r.nextInt(3); 
+		return liste.get(nbAleatoire);	
+	}
+}

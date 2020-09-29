@@ -1,0 +1,2 @@
+module Personne2 {
+}

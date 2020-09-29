@@ -1,0 +1,10 @@
+package exercice0;
+
+public class De {
+	public int nbFaces = 3;
+	
+	public int getNbFaces() {
+		return nbFaces;
+	}
+
+}

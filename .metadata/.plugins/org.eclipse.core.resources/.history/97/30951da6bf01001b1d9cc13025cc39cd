@@ -1,0 +1,21 @@
+package poo_cours;
+
+public class Universite{
+	private String titre;
+	Personne[] membres; //Pas compris pk il faut Personne
+	private static int nbMembres = 0;
+
+		public Universite(String titre) {
+			
+		}
+		public void ajoutMembre(Personne p) {
+			membres[nbMembres]=p;
+			nbMembres++;
+		}
+		public void showMembers() {
+			for (int i = 0; i < nbMembres ; i++){
+				System.out.println(membres[nbMembres]);
+			}
+		}
+		
+}

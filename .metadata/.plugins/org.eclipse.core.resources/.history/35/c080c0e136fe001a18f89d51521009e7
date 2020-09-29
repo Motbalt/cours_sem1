@@ -1,0 +1,12 @@
+package exercice0;
+
+public class De {
+	public int nbFaces = 3;
+	public void setNbFaces(int nbFaces) {
+		this.nbFaces=nbFaces;
+	}
+	public int getNbFaces() {
+		return nbFaces;
+	}
+
+}

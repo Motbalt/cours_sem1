@@ -1,0 +1,29 @@
+package poo_cours;
+public class Personne {
+	
+	String nom;
+	String adresse;
+	double salaire;
+	
+	
+	public void defPersonne(String nom, String adresse, double salaire) {
+		this.nom=nom;
+		this.adresse=adresse;
+		this.salaire=salaire;
+	}
+	/*public String setNom(String nom) {
+	this.nom=nom;
+	}
+	
+	public String setAdresse(String adresse) {
+	this.nom=nom;
+
+	}
+	public String setNom(double salaire) {
+	this.nom=nom;
+	}
+	*/
+	public String getAffichage() {
+	System.out.println("Monsieur "+ nom + "résidant à" + adresse + "ayant un salaire de :" + salaire);
+	}
+}

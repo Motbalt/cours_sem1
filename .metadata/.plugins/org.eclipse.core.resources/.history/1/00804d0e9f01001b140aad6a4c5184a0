@@ -1,0 +1,13 @@
+package poo_cours;
+
+public class Enseignant extends Personne {
+	//Constructor
+	public Enseignant(String nom, double salaire) {
+		super(nom, salaire);
+		// TODO Auto-generated constructor stub
+	}
+	//methodes
+	public String sePresenter() {
+		return "bonjour je suis votre nouvel enseignant M." + nom;
+	}
+}
